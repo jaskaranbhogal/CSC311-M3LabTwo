@@ -1,9 +1,10 @@
 .login-root {
     -fx-background-color: #f4f7f5;
+    -fx-font-family: "Arial";
 }
 
 .brand-panel {
-    -fx-background-color: #075f46;
+    -fx-background-color: linear-gradient(to bottom right, #064b39, #087458);
 }
 
 .brand-badge {
@@ -55,50 +56,54 @@
 
 .login-field {
     -fx-pref-height: 42px;
-    -fx-background-color: #f7f9f8;
+    -fx-background-color: #f8faf9;
     -fx-border-color: #cfd9d5;
     -fx-border-radius: 7px;
     -fx-background-radius: 7px;
     -fx-padding: 0 12px;
+    -fx-font-size: 13px;
 }
 
 .login-field:focused {
     -fx-border-color: #0a7657;
+    -fx-border-width: 1.5px;
+    -fx-background-color: white;
+}
+
+.login-button,
+.create-button,
+.cancel-button {
+    -fx-pref-height: 42px;
+    -fx-background-radius: 7px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
 }
 
 .login-button {
-    -fx-pref-height: 42px;
     -fx-background-color: #0a7657;
-    -fx-background-radius: 7px;
-    -fx-font-weight: bold;
     -fx-text-fill: white;
-    -fx-cursor: hand;
 }
 
 .login-button:hover {
     -fx-background-color: #075f46;
 }
 
-.cancel-button {
-    -fx-pref-height: 42px;
-    -fx-background-color: transparent;
-    -fx-border-color: #aab8b3;
-    -fx-border-radius: 7px;
-    -fx-font-weight: bold;
-    -fx-text-fill: #51655f;
-    -fx-cursor: hand;
-}
-
-
 .create-button {
-    -fx-pref-height: 42px;
     -fx-background-color: #d6a84b;
-    -fx-background-radius: 7px;
-    -fx-font-weight: bold;
     -fx-text-fill: #17352c;
-    -fx-cursor: hand;
 }
 
 .create-button:hover {
     -fx-background-color: #c6973d;
+}
+
+.cancel-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #aab8b3;
+    -fx-border-radius: 7px;
+    -fx-text-fill: #51655f;
+}
+
+.cancel-button:hover {
+    -fx-background-color: #eef3f0;
 }

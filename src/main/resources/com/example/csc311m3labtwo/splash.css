@@ -1,11 +1,12 @@
 .splash-root {
-    -fx-background-color: #075f46;
+    -fx-background-color: linear-gradient(to bottom right, #064b39, #0a7456);
 }
 
 .splash-card {
     -fx-background-color: white;
     -fx-background-radius: 24px;
     -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 24, 0.12, 0, 8);
 }
 
 .school-mark {
@@ -14,21 +15,25 @@
     -fx-border-color: #d6a84b;
     -fx-border-radius: 59px;
     -fx-border-width: 4px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.14), 12, 0.10, 0, 4);
 }
 
 .school-mark-text {
+    -fx-font-family: "Arial";
     -fx-font-size: 34px;
     -fx-font-weight: bold;
     -fx-text-fill: white;
 }
 
 .college-title {
+    -fx-font-family: "Arial";
     -fx-font-size: 26px;
     -fx-font-weight: bold;
     -fx-text-fill: #17352c;
 }
 
 .portal-subtitle {
+    -fx-font-family: "Arial";
     -fx-font-size: 13px;
     -fx-font-weight: bold;
     -fx-text-fill: #638078;
@@ -39,7 +44,19 @@
     -fx-accent: #d6a84b;
 }
 
+.splash-progress > .track {
+    -fx-background-color: #e4ece8;
+    -fx-background-radius: 8px;
+}
+
+.splash-progress > .bar {
+    -fx-background-color: #d6a84b;
+    -fx-background-radius: 8px;
+    -fx-background-insets: 0;
+}
+
 .loading-text {
+    -fx-font-family: "Arial";
     -fx-font-size: 12px;
     -fx-text-fill: #6b7e78;
 }
