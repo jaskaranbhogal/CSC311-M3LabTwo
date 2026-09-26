@@ -13,7 +13,8 @@
             styleClass="login-root"
             stylesheets="@login.css"
             xmlns="http://javafx.com/javafx/21"
-            xmlns:fx="http://javafx.com/fxml/1">
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.csc311m3labtwo.HelloController">
 
     <left>
         <VBox alignment="CENTER_LEFT"
@@ -58,8 +59,14 @@
                         styleClass="login-button"/>
 
                 <Button maxWidth="Infinity"
+                        text="CREATE ACCOUNT"
+                        styleClass="create-button"
+                        onAction="#openRegistration"/>
+
+                <Button maxWidth="Infinity"
                         text="CANCEL"
-                        styleClass="cancel-button"/>
+                        styleClass="cancel-button"
+                        onAction="#closeApp"/>
             </VBox>
         </VBox>
     </center>

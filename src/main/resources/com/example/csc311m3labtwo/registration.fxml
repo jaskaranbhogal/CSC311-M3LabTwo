@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="600.0"
+           prefWidth="900.0"
+           styleClass="registration-root"
+           stylesheets="@registration.css"
+           xmlns="http://javafx.com/javafx/21"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.csc311m3labtwo.HelloController">
+
+    <VBox maxWidth="500.0"
+          spacing="14.0"
+          styleClass="registration-card">
+        <padding>
+            <Insets bottom="34.0" left="42.0" right="42.0" top="34.0"/>
+        </padding>
+
+        <Label text="Create your account"
+               styleClass="registration-title"/>
+
+        <Label text="Enter your information to set up your FSC student portal profile."
+               wrapText="true"
+               styleClass="registration-subtitle"/>
+
+        <HBox spacing="12.0">
+            <VBox spacing="6.0" HBox.hgrow="ALWAYS">
+                <Label text="FIRST NAME" styleClass="field-label"/>
+                <TextField promptText="First name" styleClass="registration-field"/>
+            </VBox>
+
+            <VBox spacing="6.0" HBox.hgrow="ALWAYS">
+                <Label text="LAST NAME" styleClass="field-label"/>
+                <TextField promptText="Last name" styleClass="registration-field"/>
+            </VBox>
+        </HBox>
+
+        <Label text="EMAIL" styleClass="field-label"/>
+        <TextField promptText="name@farmingdale.edu"
+                   styleClass="registration-field"/>
+
+        <Label text="PASSWORD" styleClass="field-label"/>
+        <PasswordField promptText="Create password"
+                       styleClass="registration-field"/>
+
+        <Label text="CONFIRM PASSWORD" styleClass="field-label"/>
+        <PasswordField promptText="Confirm password"
+                       styleClass="registration-field"/>
+
+        <Button maxWidth="Infinity"
+                text="CREATE ACCOUNT"
+                styleClass="register-button"/>
+
+        <Button maxWidth="Infinity"
+                text="BACK TO LOGIN"
+                styleClass="back-button"
+                onAction="#backToLogin"/>
+    </VBox>
+</StackPane>

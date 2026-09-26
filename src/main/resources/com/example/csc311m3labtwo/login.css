@@ -88,3 +88,17 @@
     -fx-text-fill: #51655f;
     -fx-cursor: hand;
 }
+
+
+.create-button {
+    -fx-pref-height: 42px;
+    -fx-background-color: #d6a84b;
+    -fx-background-radius: 7px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #17352c;
+    -fx-cursor: hand;
+}
+
+.create-button:hover {
+    -fx-background-color: #c6973d;
+}

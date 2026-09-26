@@ -4,13 +4,17 @@ import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ProgressBar;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+
+import java.io.IOException;
 
 public class HelloController {
 
@@ -45,7 +49,36 @@ public class HelloController {
             Parent root = loader.load();
             Stage stage = (Stage) splashProgress.getScene().getWindow();
             stage.setScene(new Scene(root, 900, 600));
-        } catch (Exception exception) {
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void openRegistration(ActionEvent event) {
+        changeScene("registration.fxml", (Node) event.getSource());
+    }
+
+    @FXML
+    private void backToLogin(ActionEvent event) {
+        changeScene("login.fxml", (Node) event.getSource());
+    }
+
+    @FXML
+    private void closeApp() {
+        Platform.exit();
+    }
+
+    private void changeScene(String fileName, Node source) {
+        try {
+            FXMLLoader loader = new FXMLLoader(
+                    getClass().getResource(fileName)
+            );
+
+            Parent root = loader.load();
+            Stage stage = (Stage) source.getScene().getWindow();
+            stage.setScene(new Scene(root, 900, 600));
+        } catch (IOException exception) {
             exception.printStackTrace();
         }
     }
