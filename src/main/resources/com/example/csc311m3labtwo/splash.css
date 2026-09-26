@@ -1,0 +1,45 @@
+.splash-root {
+    -fx-background-color: #075f46;
+}
+
+.splash-card {
+    -fx-background-color: white;
+    -fx-background-radius: 24px;
+    -fx-padding: 20px;
+}
+
+.school-mark {
+    -fx-background-color: #006b4f;
+    -fx-background-radius: 59px;
+    -fx-border-color: #d6a84b;
+    -fx-border-radius: 59px;
+    -fx-border-width: 4px;
+}
+
+.school-mark-text {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.college-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #17352c;
+}
+
+.portal-subtitle {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #638078;
+}
+
+.splash-progress {
+    -fx-pref-height: 13px;
+    -fx-accent: #d6a84b;
+}
+
+.loading-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #6b7e78;
+}
