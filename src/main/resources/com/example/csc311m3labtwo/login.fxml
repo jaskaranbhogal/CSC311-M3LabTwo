@@ -56,7 +56,8 @@
 
                 <Button maxWidth="Infinity"
                         text="LOGIN"
-                        styleClass="login-button"/>
+                        styleClass="login-button"
+                        onAction="#openLanding"/>
 
                 <Button maxWidth="Infinity"
                         text="CREATE ACCOUNT"

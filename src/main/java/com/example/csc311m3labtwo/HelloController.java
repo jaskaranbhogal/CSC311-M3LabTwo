@@ -60,7 +60,17 @@ public class HelloController {
     }
 
     @FXML
+    private void openLanding(ActionEvent event) {
+        changeScene("landing.fxml", (Node) event.getSource());
+    }
+
+    @FXML
     private void backToLogin(ActionEvent event) {
+        changeScene("login.fxml", (Node) event.getSource());
+    }
+
+    @FXML
+    private void signOut(ActionEvent event) {
         changeScene("login.fxml", (Node) event.getSource());
     }
 

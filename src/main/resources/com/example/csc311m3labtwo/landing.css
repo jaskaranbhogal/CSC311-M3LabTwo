@@ -1,0 +1,71 @@
+.landing-root {
+    -fx-background-color: #f2f2f2;
+}
+
+.main-menu {
+    -fx-background-color: #dedede;
+    -fx-border-color: #b8b8b8;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.page-header {
+    -fx-background-color: white;
+    -fx-border-color: #d8d8d8;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.header-title {
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #24493c;
+}
+
+.header-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #777777;
+}
+
+.signout-button {
+    -fx-background-color: #406f5b;
+    -fx-background-radius: 4px;
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 14px;
+}
+
+.info-panel {
+    -fx-background-color: white;
+    -fx-border-color: #9aa79f;
+    -fx-border-width: 1px;
+}
+
+.panel-heading {
+    -fx-background-color: #47735e;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 14px;
+    -fx-max-width: 10000px;
+}
+
+.cell-label,
+.cell-value {
+    -fx-padding: 10px 14px;
+    -fx-border-color: #d5d9d7;
+    -fx-border-width: 0 1px 1px 0;
+    -fx-min-height: 38px;
+}
+
+.cell-label {
+    -fx-min-width: 235px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3f5049;
+    -fx-background-color: #f2f6f4;
+}
+
+.cell-value {
+    -fx-min-width: 580px;
+    -fx-text-fill: #333333;
+    -fx-background-color: white;
+}
