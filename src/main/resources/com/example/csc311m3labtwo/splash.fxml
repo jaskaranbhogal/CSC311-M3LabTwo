@@ -4,22 +4,36 @@
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-<StackPane prefHeight="600.0" prefWidth="900.0"
+
+<StackPane prefHeight="600.0"
+           prefWidth="900.0"
            styleClass="splash-root"
            stylesheets="@splash.css"
            xmlns="http://javafx.com/javafx/21"
-           xmlns:fx="http://javafx.com/fxml/1">
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.csc311m3labtwo.HelloController">
+
     <VBox alignment="CENTER" maxWidth="430.0" spacing="18.0" styleClass="splash-card">
         <padding>
             <Insets bottom="42.0" left="52.0" right="52.0" top="42.0"/>
         </padding>
-        <StackPane minHeight="118.0" minWidth="118.0" prefHeight="118.0" prefWidth="118.0"
+
+        <StackPane minHeight="118.0"
+                   minWidth="118.0"
+                   prefHeight="118.0"
+                   prefWidth="118.0"
                    styleClass="school-mark">
             <Label text="FSC" styleClass="school-mark-text"/>
         </StackPane>
+
         <Label text="Farmingdale State College" styleClass="college-title"/>
         <Label text="STUDENT PORTAL" styleClass="portal-subtitle"/>
-        <ProgressBar prefWidth="320.0" progress="0.71" styleClass="splash-progress"/>
-        <Label text="71%" styleClass="loading-text"/>
+
+        <ProgressBar fx:id="splashProgress"
+                     prefWidth="320.0"
+                     progress="0.0"
+                     styleClass="splash-progress"/>
+
+        <Label text="Loading your campus experience" styleClass="loading-text"/>
     </VBox>
 </StackPane>
